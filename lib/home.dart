@@ -5,17 +5,17 @@ import 'mealdeal.dart';
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
-  void _navigateToPopular(BuildContext context) {
+  void _ToPopular(BuildContext context) {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => const MostPopular()));
   }
 
-  void _navigateToDeals(BuildContext context) {
+  void _ToDeals(BuildContext context) {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => const MealDeal()));
   }
 
-  Widget _buildSectionTitle(String title, VoidCallback onPressed) {
+  Widget _ListTitle(String title, VoidCallback onPressed) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 1.0),
       child: Row(
@@ -40,20 +40,20 @@ class Home extends StatelessWidget {
     );
   }
 
-  Widget _buildHorizontalList(List<Restaurant> restaurants) {
+  Widget _HorizontalList(List<Restaurant> restaurants) {
     return Container(
       height: 240.0,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: restaurants.length,
         itemBuilder: (context, index) {
-          return _buildRestaurantItem(restaurants[index]);
+          return _ItemCards(restaurants[index]);
         },
       ),
     );
   }
 
-  Widget _buildRestaurantItem(Restaurant restaurant) {
+  Widget _ItemCards(Restaurant restaurant) {
     return Container(
       width: 250.0,
       margin: const EdgeInsets.all(8.0),
@@ -190,16 +190,16 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            _buildSectionTitle(
+            _ListTitle(
               'Most Popular',
-              () => _navigateToPopular(context),
+              () => _ToPopular(context),
             ),
-            _buildHorizontalList(popularRestaurants),
-            _buildSectionTitle(
+            _HorizontalList(popularRestaurants),
+            _ListTitle(
               'Meal Deals',
-              () => _navigateToDeals(context),
+              () => _ToDeals(context),
             ),
-            _buildHorizontalList(dealRestaurants),
+            _HorizontalList(dealRestaurants),
           ],
         ),
       ),

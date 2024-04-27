@@ -18,7 +18,7 @@ class MostPopular extends StatelessWidget {
       ),
       body: ListView(
         children: const <Widget>[
-          RestaurantCard(
+          Restaurant(
             name: 'Fish King',
             address: '122 King Street',
             cuisine: 'Fish, American',
@@ -26,7 +26,7 @@ class MostPopular extends StatelessWidget {
             price: '\$25 - \$40',
             rating: '4.4',
           ),
-          RestaurantCard(
+          Restaurant(
             name: 'Olive Garden',
             address: '12 Arthur Street',
             cuisine: 'Pasta, Italian',
@@ -34,7 +34,7 @@ class MostPopular extends StatelessWidget {
             price: '\$15 - \$30',
             rating: '4.3',
           ),
-          RestaurantCard(
+          Restaurant(
             name: 'Red Lobster',
             address: '22 Prawn Street',
             cuisine: 'Seafood, American',
@@ -42,7 +42,7 @@ class MostPopular extends StatelessWidget {
             price: '\$25 - \$80',
             rating: '4.6',
           ),
-          RestaurantCard(
+          Restaurant(
             name: 'KFC Broadway',
             address: '122 Queen Street',
             cuisine: 'Fried Chicken, American',
@@ -50,7 +50,7 @@ class MostPopular extends StatelessWidget {
             price: '\$10 - \$20',
             rating: '4.7',
           ),
-          RestaurantCard(
+          Restaurant(
             name: 'FriednGrill',
             address: '45 Coal Street',
             cuisine: 'Grill and Fried, American',
@@ -64,7 +64,7 @@ class MostPopular extends StatelessWidget {
   }
 }
 
-class RestaurantCard extends StatelessWidget {
+class Restaurant extends StatelessWidget {
   final String name;
   final String address;
   final String cuisine;
@@ -72,7 +72,7 @@ class RestaurantCard extends StatelessWidget {
   final String price;
   final String rating;
 
-  const RestaurantCard({
+  const Restaurant({
     Key? key,
     required this.name,
     required this.address,

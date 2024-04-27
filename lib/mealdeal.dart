@@ -18,7 +18,7 @@ class MealDeal extends StatelessWidget {
       ),
       body: ListView(
         children: const <Widget>[
-          RestaurantCard(
+          Deal(
             name: 'Burger Combo',
             address: '1 Kings Road',
             cuisine: 'Combo, Variety',
@@ -26,7 +26,7 @@ class MealDeal extends StatelessWidget {
             price: '\$19.99',
             rating: '4.8',
           ),
-          RestaurantCard(
+          Deal(
             name: 'Seafood Platter',
             address: '2 Kings Road',
             cuisine: 'Combo, Variety',
@@ -34,7 +34,7 @@ class MealDeal extends StatelessWidget {
             price: '\$29.99',
             rating: '4.7',
           ),
-          RestaurantCard(
+          Deal(
             name: 'Chicken Combo',
             address: '3 Kings Road',
             cuisine: 'Combo, Variety',
@@ -42,7 +42,7 @@ class MealDeal extends StatelessWidget {
             price: '\$49.99',
             rating: '4.6',
           ),
-          RestaurantCard(
+          Deal(
             name: 'Indian Platter',
             address: '4 Kings Road',
             cuisine: 'Combo, Variety',
@@ -50,7 +50,7 @@ class MealDeal extends StatelessWidget {
             price: '\$19.99',
             rating: '4.5',
           ),
-          RestaurantCard(
+          Deal(
             name: 'Dessert Platter',
             address: '5 Kings Road',
             cuisine: 'Combo, Variety',
@@ -64,7 +64,7 @@ class MealDeal extends StatelessWidget {
   }
 }
 
-class RestaurantCard extends StatelessWidget {
+class Deal extends StatelessWidget {
   final String name;
   final String address;
   final String cuisine;
@@ -72,7 +72,7 @@ class RestaurantCard extends StatelessWidget {
   final String price;
   final String rating;
 
-  const RestaurantCard({
+  const Deal({
     Key? key,
     required this.name,
     required this.address,
