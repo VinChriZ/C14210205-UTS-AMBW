@@ -1,0 +1,37 @@
+name: c14210205
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.3.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/images/deal1.jpg
+    - lib/images/profile.jpg
+    - lib/images/deal2.jpg
+    - lib/images/deal3.jpg
+    - lib/images/deal4.jpg
+    - lib/images/deal5.jpg
+    - lib/images/popular1.jpg
+    - lib/images/popular2.jpg
+    - lib/images/popular3.jpg
+    - lib/images/popular4.jpg
+    - lib/images/popular5.jpg
+    - lib/images/res1.jpg
+    - lib/images/res2.jpg
+    - lib/images/res3.jpg
+    - lib/images/res4.jpg
+    - lib/images/res5.jpg
+    - lib/images/banner.jpg
