@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
 
   Widget _buildSectionTitle(String title, VoidCallback onPressed) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 1.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -30,7 +30,10 @@ class Home extends StatelessWidget {
           ),
           TextButton(
             onPressed: onPressed,
-            child: const Text('See all'),
+            child: const Text(
+              'See all',
+              style: TextStyle(color: Colors.orange),
+            ),
           ),
         ],
       ),
@@ -55,7 +58,7 @@ class Home extends StatelessWidget {
       width: 250.0,
       margin: const EdgeInsets.all(8.0),
       child: Card(
-        color: Colors.white,
+        color: Color.fromARGB(255, 255, 253, 228),
         elevation: 4.0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.0),

@@ -27,7 +27,7 @@ class MealDeal extends StatelessWidget {
             rating: '4.8',
           ),
           RestaurantCard(
-            name: 'Family Feast',
+            name: 'Seafood Platter',
             address: '2 Kings Road',
             cuisine: 'Combo, Variety',
             imageUrl: 'lib/images/deal2.jpg',
@@ -35,7 +35,7 @@ class MealDeal extends StatelessWidget {
             rating: '4.7',
           ),
           RestaurantCard(
-            name: 'Family Feast',
+            name: 'Chicken Combo',
             address: '3 Kings Road',
             cuisine: 'Combo, Variety',
             imageUrl: 'lib/images/deal3.jpg',
@@ -43,7 +43,7 @@ class MealDeal extends StatelessWidget {
             rating: '4.6',
           ),
           RestaurantCard(
-            name: 'Family Feast',
+            name: 'Indian Platter',
             address: '4 Kings Road',
             cuisine: 'Combo, Variety',
             imageUrl: 'lib/images/deal4.jpg',
@@ -51,7 +51,7 @@ class MealDeal extends StatelessWidget {
             rating: '4.5',
           ),
           RestaurantCard(
-            name: 'Family Feast',
+            name: 'Dessert Platter',
             address: '5 Kings Road',
             cuisine: 'Combo, Variety',
             imageUrl: 'lib/images/deal5.jpg',
@@ -85,6 +85,7 @@ class RestaurantCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: Color.fromARGB(255, 255, 253, 228),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
